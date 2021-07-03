@@ -1,0 +1,14 @@
+@import "../node_modules/@angular/material/theming";
+
+@include mat-core();
+
+$eHotel-primary: mat-palette($mat-blue-grey, 700);
+$eHotel-accent: mat-palette($mat-blue-grey, 600);
+
+$eHotel-theme: mat-light-theme($eHotel-primary, $eHotel-accent);
+
+@include angular-material-theme($eHotel-theme);
+
+.navtabs-container {
+    background-color: mat-color($eHotel-accent);
+}
